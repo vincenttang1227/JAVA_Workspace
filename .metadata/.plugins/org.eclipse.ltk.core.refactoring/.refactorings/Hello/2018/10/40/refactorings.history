@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move element &apos;Hello.java&apos; to &apos;CH01.java&apos;&#x0D;&#x0A;- 原始物件：&apos;Hello&apos;&#x0D;&#x0A;- 目的地元素：&apos;CH01.java&apos;&#x0D;&#x0A;- 原始元素：&apos;Hello.java&apos;&#x0D;&#x0A;- 更新對已重構元素的參照" description="移動編譯單元" destination="=CH01/src&lt;{CH01.java" element1="/src&lt;{Hello.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1538719458569" units="1" version="1.0"/>
-</session>
