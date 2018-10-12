@@ -7,6 +7,6 @@ public class CH02_15
 		System.out.print("輸入整數字串：");
 		String st = keyin.readLine();
 		int num = Integer.parseInt(st);
-		System.out.println("顯示整數數值："+num);
+		System.out.println("顯示整數數值：" + num);
 	}
 }
