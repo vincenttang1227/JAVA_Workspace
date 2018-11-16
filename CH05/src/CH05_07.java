@@ -21,7 +21,8 @@ public class CH05_07
 		System.out.println(date_time2.get(Calendar.MILLISECOND)+"²@¬í");
 		
 		System.out.println("\nPush<<Enter>>to end the test time");
-		int p = System.in.read();
+
+		
 		t2 = System.currentTimeMillis();
 		System.out.println("\nEnd: "+t2+"millsecond");
 		tot_t=t2-t1;

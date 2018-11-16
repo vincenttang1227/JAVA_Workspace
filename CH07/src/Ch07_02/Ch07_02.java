@@ -58,7 +58,6 @@ public class Ch07_02
 		sha2.SetValue(10, 5);
 		System.out.println("\n===========================");
 		CRectangle sha3 = new CRectangle(2, 3);
-		sha2.SetValue(10, 5);
+		sha3.SetValue(10, 5);
 	}
-
 }
