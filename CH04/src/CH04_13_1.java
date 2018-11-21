@@ -28,7 +28,6 @@ public class CH04_13_1
 			System.out.print("Input thevalue of array:");
 			int value = Integer.parseInt(keyin.readLine());
 			
-			num[i]=value
 		}
 
 		
