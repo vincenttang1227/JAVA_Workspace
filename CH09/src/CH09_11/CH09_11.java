@@ -45,35 +45,35 @@ class CAreaF extends JFrame
 		repaint();
 	}
 
-	public ActionListener ListenerOK=new ActionListener()
-			{
-	public void actionPerformed(ActionEvent e)
+	public ActionListener ListenerOK = new ActionListener()
 	{
-			int len,area;
-			len=Integer.parseInt(txtLen.getText());
-			area=len*len;
-			txtArea.setText("­±¿n¡G"+area);
+		public void actionPerformed(ActionEvent e)
+		{
+			int len, area;
+			len = Integer.parseInt(txtLen.getText());
+			area = len * len;
+			txtArea.setText("­±¿n¡G" + area);
 			btnOK.removeActionListener(ListenerOK);
 			btnCls.addActionListener(ListenerCls);
 		}
-			};
+	};
 
-			public ActionListener ListenerCls=new ActionListener()
-			{
-	public void actionPerformed(ActionEvent e)
+	public ActionListener ListenerCls = new ActionListener()
 	{
+		public void actionPerformed(ActionEvent e)
+		{
 			txtLen.setText("0");
 			txtArea.setText("");
 			btnOK.addActionListener(ListenerOK);
 			btnCls.removeActionListener(ListenerCls);
 		}
-			};
+	};
 }
 
 public class CH09_11
 {
 	public static void main(String[] args)
 	{
-		CAreaF areaF=new CAreaF();
+		CAreaF areaF = new CAreaF();
 	}
 }
