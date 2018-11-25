@@ -1,6 +1,7 @@
 package HOMEWORK;
 
 import java.awt.event.*;
+import java.awt.Font;
 import javax.swing.*;
 
 class CGameF extends JFrame
@@ -19,8 +20,9 @@ class CGameF extends JFrame
 	private JLabel lblCompWin = new JLabel("電腦贏次數：0");
 	private JLabel lblSame = new JLabel("平手次數：0");
 	private JLabel lblResult = new JLabel("輸贏狀態：");
-
-	CGameF()
+	Font f = new Font("微軟正黑體",Font.BOLD,16);
+	
+	public CGameF()
 	{
 		setTitle("猜拳遊戲");
 		setLayout(null);
@@ -29,9 +31,11 @@ class CGameF extends JFrame
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		lblPlay.setBounds(80, 50, 220, 80);
+		lblPlay.setFont(f);
 		add(lblPlay);
 		
 		lblComp.setBounds(280,50,220,80);
+		lblComp.setFont(f);
 		add(lblComp);
 		
 		btnScis.setBounds(50,150,150,50);
@@ -50,16 +54,20 @@ class CGameF extends JFrame
 		btnRst.addActionListener(ListenerRst);
 		add(btnRst);
 		
-		lblPlayWin.setBounds(300,175,120,20);
+		lblPlayWin.setBounds(275,175,120,20);
+		lblPlayWin.setFont(f);
 		add(lblPlayWin);
 		
-		lblCompWin.setBounds(300,225,120,20);
+		lblCompWin.setBounds(275,225,120,20);
+		lblCompWin.setFont(f);
 		add(lblCompWin);
 		
-		lblSame.setBounds(300,325,230,20);
+		lblSame.setBounds(275,325,230,20);
+		lblSame.setFont(f);
 		add(lblSame);
 		
-		lblResult.setBounds(300,425,120,20);
+		lblResult.setBounds(275,425,200,20);
+		lblResult.setFont(f);
 		add(lblResult);
 		
 		repaint();
@@ -78,6 +86,7 @@ class CGameF extends JFrame
 				lblComp.setText("電腦猜布");
 				playWin += 1;
 				lblPlayWin.setText("玩家贏次數："+playWin);
+				lblResult.setText("輸贏狀態：你猜贏囉！");
 			}
 			else if (compGue==2)
 			{
@@ -85,6 +94,7 @@ class CGameF extends JFrame
 				lblComp.setText("電腦猜石頭");
 				compWin += 1;
 				lblCompWin.setText("電腦贏次數："+compWin);
+				lblResult.setText("輸贏狀態：你猜輸囉！");
 			}
 			else
 			{
@@ -92,6 +102,7 @@ class CGameF extends JFrame
 				lblComp.setText("電腦猜剪刀");
 				same += 1;
 				lblSame.setText("平手次數："+same);
+				lblResult.setText("輸贏狀態：這次平手！");
 			}
 			whoWin();
 		}
@@ -110,6 +121,7 @@ class CGameF extends JFrame
 				lblComp.setText("電腦猜剪刀");
 				playWin += 1;
 				lblPlayWin.setText("玩家贏次數："+playWin);
+				lblResult.setText("輸贏狀態：你猜贏囉！");
 			}
 			else if (compGue==3)
 			{
@@ -117,6 +129,7 @@ class CGameF extends JFrame
 				lblComp.setText("電腦猜布");
 				compWin += 1;
 				lblCompWin.setText("電腦贏次數："+compWin);
+				lblResult.setText("輸贏狀態：你猜輸囉！");
 			}
 			else
 			{
@@ -124,6 +137,7 @@ class CGameF extends JFrame
 				lblComp.setText("電腦猜石頭");
 				same += 1;
 				lblSame.setText("平手次數："+same);
+				lblResult.setText("輸贏狀態：這次平手！");
 			}
 			whoWin();
 		}
@@ -142,6 +156,7 @@ class CGameF extends JFrame
 				lblComp.setText("電腦猜石頭");
 				playWin += 1;
 				lblPlayWin.setText("玩家贏次數："+playWin);
+				lblResult.setText("輸贏狀態：你猜贏囉！");
 			}
 			else if (compGue==1)
 			{
@@ -149,6 +164,7 @@ class CGameF extends JFrame
 				lblComp.setText("電腦猜剪刀");
 				compWin += 1;
 				lblCompWin.setText("電腦贏次數："+compWin);
+				lblResult.setText("輸贏狀態：你猜輸囉！");
 			}
 			else
 			{
@@ -156,6 +172,7 @@ class CGameF extends JFrame
 				lblComp.setText("電腦猜布");
 				same += 1;
 				lblSame.setText("平手次數："+same);
+				lblResult.setText("輸贏狀態：這次平手！");
 			}
 			whoWin();
 		}	
@@ -165,7 +182,18 @@ class CGameF extends JFrame
 	{
 		public void actionPerformed(ActionEvent e)
 		{
-			new CGameF();
+			lblPlay.setText("請出拳‧‧‧");
+	  	lblComp.setText("看誰先贏五次！！");
+			lblPlayWin.setText("玩家贏次數：0");
+			lblCompWin.setText("電腦贏次數：0");
+			lblSame.setText("平手次數：0");
+			lblResult.setText("輸贏狀態：");
+			int playWin=0,compWin=0,same=0;
+			
+			btnScis.addActionListener(ListenerScis);
+			btnStone.addActionListener(ListenerStone);
+			btnPaper.addActionListener(ListenerPaper);
+			btnRst.addActionListener(ListenerRst);
 		}
 	};
 	
