@@ -22,7 +22,7 @@ class CGameF extends JFrame
 	private JLabel lblResult = new JLabel("輸贏狀態：");
 	Font f = new Font("微軟正黑體",Font.BOLD,16);
 	
-	public CGameF()
+	CGameF()
 	{
 		setTitle("猜拳遊戲");
 		setLayout(null);
@@ -183,12 +183,16 @@ class CGameF extends JFrame
 		public void actionPerformed(ActionEvent e)
 		{
 			lblPlay.setText("請出拳‧‧‧");
+			lblPlay.setIcon(new ImageIcon(""));
 	  	lblComp.setText("看誰先贏五次！！");
+			lblComp.setIcon(new ImageIcon(""));
 			lblPlayWin.setText("玩家贏次數：0");
 			lblCompWin.setText("電腦贏次數：0");
 			lblSame.setText("平手次數：0");
 			lblResult.setText("輸贏狀態：");
-			int playWin=0,compWin=0,same=0;
+			playWin=0;
+			compWin=0;
+			same=0;
 			
 			btnScis.addActionListener(ListenerScis);
 			btnStone.addActionListener(ListenerStone);
