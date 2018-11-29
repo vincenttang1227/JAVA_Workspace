@@ -11,4 +11,3 @@ INDEX VERSION 1.130+C:\Users\Administrator\workspace\.metadata\.plugins\org.ecli
 1533737460.index
 1001222161.index
 2894047641.index
-1562308263.index

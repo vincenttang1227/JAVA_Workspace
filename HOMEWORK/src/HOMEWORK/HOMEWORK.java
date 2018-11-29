@@ -7,22 +7,22 @@ import javax.swing.*;
 class CGameF extends JFrame
 {
   ImageIcon iconScis = new ImageIcon("..\\HOMEWORK\\src\\HOMEWORK\\images\\Scissor.gif");
-	private ImageIcon iconStone = new ImageIcon("..\\HOMEWORK\\src\\HOMEWORK\\images\\Stone.gif");
-	private ImageIcon iconPaper = new ImageIcon("..\\HOMEWORK\\src\\HOMEWORK\\images\\Paper.gif");
-	private JLabel lblPlay = new JLabel("請出拳‧‧‧");
-	private JLabel lblComp = new JLabel("看誰先贏五次！！");
-	private JButton btnScis = new JButton("剪刀", iconScis);
-	private JButton btnStone = new JButton("石頭", iconStone);
-	private JButton btnPaper = new JButton("布", iconPaper);
-	private JButton btnRst = new JButton("重來");
-	private JLabel lblPlayWin = new JLabel("玩家贏次數：0");
-	private JLabel lblCompWin = new JLabel("電腦贏次數：0");
-	private JLabel lblSame = new JLabel("平手次數：0");
-	private JLabel lblResult = new JLabel("輸贏狀態：");
+	ImageIcon iconStone = new ImageIcon("..\\HOMEWORK\\src\\HOMEWORK\\images\\Stone.gif");
+	ImageIcon iconPaper = new ImageIcon("..\\HOMEWORK\\src\\HOMEWORK\\images\\Paper.gif");
+	JLabel lblPlay = new JLabel("請出拳‧‧‧");
+	JLabel lblComp = new JLabel("看誰先贏五次！！");
+	JButton btnScis = new JButton("剪刀", iconScis);
+	JButton btnStone = new JButton("石頭", iconStone);
+	JButton btnPaper = new JButton("布", iconPaper);
+	JButton btnRst = new JButton("重來");
+	JLabel lblPlayWin = new JLabel("玩家贏次數：0");
+	JLabel lblCompWin = new JLabel("電腦贏次數：0");
+	JLabel lblSame = new JLabel("平手次數：0");
+	JLabel lblResult = new JLabel("輸贏狀態：");
 	Font f = new Font("微軟正黑體", Font.BOLD, 16);
-	private int playWin = 0;
-	private int compWin = 0;
-	private int same = 0;
+	int playWin = 0;
+	int compWin = 0;
+	int same = 0;
 
 	CGameF()
 	{
