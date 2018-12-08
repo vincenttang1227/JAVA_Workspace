@@ -7,10 +7,26 @@ import javax.swing.JFrame;
 
 class RPSF extends JFrame
 {
-	private JLabel lblp, lblc, cWin, pWin, push, status, lbl6, lblpWin, lblcWin, lblPush;
-	private JButton btnScissor, btnStone, btnPaper, btnReset;
-	private int cCount = 0, pCount = 0, pushCount = 0;
-	private ImageIcon Scissor, Stone, Paper;
+	private JLabel lblp;
+	JLabel lblc;
+	JLabel cWin;
+	JLabel pWin;
+	JLabel push;
+	JLabel status;
+	JLabel lbl6;
+	JLabel lblpWin;
+	JLabel lblcWin;
+	JLabel lblPush;
+	JButton btnScissor;
+	JButton btnStone;
+	JButton btnPaper;
+	JButton btnReset;
+	int cCount = 0;
+	int pCount = 0;
+	int pushCount = 0;
+	ImageIcon Scissor;
+	ImageIcon Stone;
+	ImageIcon Paper;
 
 	public RPSF()
 	{
@@ -21,9 +37,9 @@ class RPSF extends JFrame
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Font f = new Font("新細明體", Font.BOLD, 20);
 
-		Scissor = new ImageIcon("..\\CH09\\src\\WORK09_02\\images\\Scissor.gif");
-		Stone = new ImageIcon("..\\CH09\\src\\WORK09_02\\images\\Stone.gif");
-		Paper = new ImageIcon("..\\CH09\\src\\WORK09_02\\images\\Paper.gif");
+		Scissor = new ImageIcon("..\\WORK09_02\\src\\WORK09_02\\images\\Scissor.gif");
+		Stone = new ImageIcon("..\\WORK09_02\\src\\WORK09_02\\images\\Stone.gif");
+		Paper = new ImageIcon("..\\WORK09_02\\src\\WORK09_02\\images\\Paper.gif");
 
 		JLabel lblp = new JLabel("請出拳~~");
 		lblp.setFont(f);
