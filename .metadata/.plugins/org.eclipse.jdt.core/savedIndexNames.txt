@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 INDEX VERSION 1.130+C:\Users\Administrator\workspace\.metadata\.plugins\org.eclipse.jdt.core
 3537799689.index
 1631616599.index
 1527409904.index
 2427601795.index
+=======
+INDEX VERSION 1.130+C:\Users\Administrator\Workspace\.metadata\.plugins\org.eclipse.jdt.core
+>>>>>>> abb32dc9c421bed7d9ce0c7de8608a278d63d538
 1286226055.index
 3193238650.index
 4217414876.index
@@ -17,6 +21,7 @@ INDEX VERSION 1.130+C:\Users\Administrator\workspace\.metadata\.plugins\org.ecli
 1114753205.index
 3139375565.index
 840645690.index
+<<<<<<< HEAD
 4157321706.index
 909861168.index
 220789872.index
@@ -24,6 +29,12 @@ INDEX VERSION 1.130+C:\Users\Administrator\workspace\.metadata\.plugins\org.ecli
 1533737460.index
 745392482.index
 2250812846.index
+=======
+730525996.index
+1159466156.index
+1533737460.index
+745392482.index
+>>>>>>> abb32dc9c421bed7d9ce0c7de8608a278d63d538
 1001222161.index
 4122227026.index
 1111690661.index
